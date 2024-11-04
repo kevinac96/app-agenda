@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red Social</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<h1>Tu Agenda Personal</h1>
+
+
+<h2>Agendar</h2>
+<form id="postForm" onsubmit="event.preventDefault(); postData()">
+
+    <label for="title">Titulo:</label>
+    <input type="text" id="postTitle" required>
+    <label for="postBody" requires>Que hiciste hoy?</label>
+    <textarea type="text" id="postBody" required></textarea>
+    <button type="submit">Agendar</button>
+
+</form>
+
+
+<button onclick="getData()">Ver Agenda</button>
+<ul id="postList"></ul>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
